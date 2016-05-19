@@ -1,9 +1,9 @@
 import argparse
 import requests
 
-parser = argparse.ArgumentParser(description='Check availible Github usernames.')
-parser.add_argument('usernames')
-parser.add_argument('--source','-s', action='store_true')
+parser = argparse.ArgumentParser(description='Check availible Github usernames')
+parser.add_argument('usernames', help='username to check')
+parser.add_argument('--source','-s', action='store_true', help='check usernames from file')
 args = parser.parse_args()
 
 def isUp(username):
